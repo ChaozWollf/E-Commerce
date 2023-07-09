@@ -1,8 +1,10 @@
 const express = require('express');
 const routes = require('./routes');
-const Sequelize = require('sequelize');
+const sequelize = require('../config/connection.js')
+const app = express();
+const PORT = process.env.PORT || 3001;
 
-const sequelize = new Sequelize(
+const sequelizes = new Sequelize(
   // Database name
   DB_NAME='ecommerce_db',
   // User
@@ -19,8 +21,7 @@ const sequelize = new Sequelize(
 
 // import sequelize connection
 
-const app = express();
-const PORT = process.env.PORT || 3001;
+
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));

@@ -19,6 +19,7 @@ prodcut_id: {
   // add Foriegn key to Products model
   foreignKey: {
     name: 'product_id'
+  }
 },
 
 tag_id: {
@@ -29,13 +30,14 @@ tag_id: {
 }
 
 },
-  {
+  }, 
+{
     sequelize,
     timestamps: false,
     freezeTableName: true,
     underscored: true,
     modelName: 'product_tag',
   }
-  );
+);
 
 module.exports = ProductTag;

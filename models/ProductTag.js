@@ -17,11 +17,15 @@ ProductTag.init(
 prodcut_id: {
   type: DataTypes.INTEGER,
   // add Foriegn key to Products model
+  foreignKey: {
+    name: 'product_id'
 },
 
 tag_id: {
   type: DataTypes.INTEGER,
   //add foriegn key that refernces the Tag model's id
+  foreignKey: {
+    name: 'tag_id'
 }
 
 },

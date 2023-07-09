@@ -2,7 +2,7 @@
 const { Model, DataTypes } = require('sequelize');
 // import our database connection from config.js
 const sequelize = require('../config/connection');
-const { toDefaultValue } = require('sequelize/types/lib/utils');
+// const { toDefaultValue } = require('sequelize/types/lib/utils');
 
 // Initialize Product model (table) by extending off Sequelize's Model class
 class Product extends Model {}
@@ -38,8 +38,9 @@ stock: {
 },
 
 category_id: {
-  type:DataTypes.INTEGER
-  //add a foreign key to reference the Category model's id
+  type:DataTypes.INTEGER,
+  foreignKey: {
+    name:'category_id'//add a foreign key to reference the Category model's id
 }
     //TODO define columns 
 },
@@ -53,6 +54,6 @@ category_id: {
     
   }
   
-  );
+});
 
 module.exports = Product;

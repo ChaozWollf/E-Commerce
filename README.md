@@ -19,4 +19,11 @@
 
 ## Credits
 
-    Thank you to Columbia Coding Boot camp for providing the starting code for this application
+    Thank you to Columbia Coding Boot camp for providing the starting code for this application.
+
+    Video : 
+[label](<Video/Untitled_ Jul 9, 2023 8_36 PM.mov>)
+
+
+Repo :
+https://github.com/ChaozWollf/E-Commerce
